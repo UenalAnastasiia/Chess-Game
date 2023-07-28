@@ -39,3 +39,7 @@
 .white {
   background: #eed4ac;
 }
+
+.selected {
+  background: brown;
+}
