@@ -23,6 +23,15 @@ export class Cell {
     }
 
 
+    isEnemy(target: Cell): boolean {
+        if (target.figure) {
+            return this.figure?.color !== target.figure.color;
+        }
+
+        return false;
+    }
+
+
     isEmpty() {
         return this.figure === null;
     }
